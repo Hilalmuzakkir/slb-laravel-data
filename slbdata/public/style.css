@@ -1,0 +1,272 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+    background-image: url('Back.png');
+    background-size: 200% 200%;
+    background-position: 50% 30%;
+    animation: backgroundMove 20s ease infinite;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+    /* Untuk membuat responsif */
+    @media (max-width: 768px) {
+        background-size: 100% 100%;
+        background-position: 50% 50%;
+    }
+}
+.login-container {
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    /* Untuk membuat responsif */
+    @media (max-width: 768px) {
+        padding: 20px;
+    }
+}
+.login-container h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+.login-container img {
+    width: 100px;
+    margin-bottom: 20px;
+    /* Untuk membuat responsif */
+    @media (max-width: 768px) {
+        width: 80px;
+    }
+}
+.login-container input[type="text"],
+.login-container input[type="password"] {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    /* Untuk membuat responsif */
+    @media (max-width: 768px) {
+        width: 80%;
+    }
+}
+.login-container button {
+    width: 90%;
+    padding: 10px;
+    background: #0906e2;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+    /* Untuk membuat responsif */
+    @media (max-width: 768px) {
+        width: 80%;
+    }
+}
+.login-container button:hover {
+    background: #6966ff;
+}
+
+/*Ini untuk css Welcome*/
+
+body {
+    background-color: #f3f3f3; /* Warna abu-abu muda */
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    animation: backgroundMove 20s ease infinite; /* Menambahkan animasi pada background */
+    overflow: auto; /* Menambahkan overflow agar bisa di scroll */
+}
+@keyframes backgroundMove {
+    0% { background-color: #f3f3f3; }
+    50% { background-color: #e3e3e3; }
+    100% { background-color: #f3f3f3; }
+}
+.main-content {
+    text-align: center;
+    width: 90%;
+    margin: auto;
+    padding: 20px;
+    max-width: 1200px; /* Membuat lebar maksimal untuk responsivitas */
+    top: 880px; /* Mengatur posisi vertikal */
+    left: 20px; /* Mengatur posisi horizontal */
+}
+.header {
+    font-size: 2.5em;
+    color: #333;
+    position: relative; /* Menambahkan properti position untuk mengatur posisi */
+    top: 380px; /* Mengatur posisi vertikal */
+    left: 20px; /* Mengatur posisi horizontal */
+}
+.header span {
+    color: #3498DB;
+    position: relative; /* Menambahkan properti position untuk mengatur posisi */
+    top: 5px; /* Mengatur posisi vertikal */
+    left: 10px; /* Mengatur posisi horizontal */
+}
+p {
+    font-size: 1.2em;
+    color: #666;
+    line-height: 1.6;
+    position: relative; /* Menambahkan properti position untuk mengatur posisi */
+    top: 20px; /* Mengatur posisi vertikal */
+    left: 30px; /* Mengatur posisi horizontal */
+}
+.login-button {
+    display: inline-block;
+    padding: 14px 60px;
+    background-color: transparent;
+    color: #666;
+    border: 2px solid #3498DB;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+    text-decoration: none;
+    margin-top: 20px;
+    font-size: 1.1em; /* Ukuran font untuk responsivitas */
+}
+.login-button:hover {
+    transform: translateY(-5px);
+    background-color: #3498DB;
+    color: #fff;
+}
+.image-container {
+    text-align: center;
+    margin-top: 2px;
+    animation: imageMove 5s ease infinite; /* Menambahkan animasi pada kontainer gambar */
+}
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    width: 100%; /* Membuat lebar gambar 100% untuk responsivitas */
+}
+@keyframes imageMove {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+}
+@media (min-width: 768px) {
+    .main-content {
+        width: 80%;
+    }
+    .header {
+        font-size: 3em;
+    }
+    p {
+        font-size: 1.5em;
+    }
+    .login-button {
+        font-size: 1.2em; /* Ukuran font untuk responsivitas */
+    }
+}
+@media (min-width: 1024px) {
+    .main-content {
+        width: 70%;
+    }
+    .header {
+        font-size: 4em;
+    }
+    p {
+        font-size: 1.6em;
+    }
+    .login-button {
+        font-size: 1.3em; /* Ukuran font untuk responsivitas */
+    }
+}
+@media (max-width: 767px) {
+    .main-content {
+        width: 95%;
+    }
+    .header {
+        font-size: 2em;
+    }
+    p {
+        font-size: 1.1em;
+    }
+    .login-button {
+        font-size: 1.1em; /* Ukuran font untuk responsivitas */
+    }
+}
+
+/*Ini untuk css Home*/
+
+.navbar {
+    background-color: transparent; /* Membuat navbar transparan */
+    padding: 20px 10px; /* Menambahkan jarak antara konten dan navbar untuk menurunkan posisi navbar */
+    transition: background-color 0.3s ease; /* Menambahkan transisi untuk efek hover */
+    position: relative; /* Mengatur posisi navbar untuk dapat diukur */
+    top: 4; /* Mengatur posisi navbar di bagian atas */
+    width: 100%; /* Mengatur lebar navbar untuk menutupi seluruh bagian atas */
+    z-index: 1000; /* Mengatur indeks z untuk mengatur urutan tumpukan elemen */
+}
+.navbar-content a {
+    text-decoration: none; /* Menghilangkan garis bawah */
+    color: rgb(88, 88, 88); /* Mengatur warna teks */
+    margin: 0 30px; /* Menambahkan jarak antara link */
+    transition: color 0.3s ease; /* Menambahkan transisi untuk efek hover */
+}
+.navbar-content a:hover {
+    color: #0073d1; /* Mengubah warna teks saat dihover */
+}
+/* Tambahkan efek animasi untuk menu header */
+.navbar-content a {
+    transform: translateY(10px);
+    transition: transform 0.3s ease;
+}
+.navbar-content a:hover {
+    transform: translateY(0);
+}
+
+ /* Tambahkan tombol dropdown untuk logout */
+ .dropdown {
+    position: relative;
+    display: inline-block;
+   
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 10px; /* Menambahkan border radius untuk membuat dropdown lebih bulat */
+}
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+/* Tambahkan efek animasi untuk tombol "Akun" saat dihover dan border radius */
+.login-button {
+    padding: 10px 40px; /* Menambahkan padding untuk tombol */
+    background-color: transparent; /* Membuat tombol transparan */
+    color: rgb(104, 104, 104); /* Mengatur warna teks tombol */
+    border: 2px solid #3498DB; /* Menambahkan border untuk memberikan kontur tombol */
+    border-radius: 20px; /* Memberikan border radius untuk membuat tombol lebih bulat */
+    cursor: pointer; /* Mengubah kursor menjadi pointer saat diarahkan ke tombol */
+    transition: transform 0.3s ease; /* Menambahkan transisi untuk efek hover */
+    text-decoration: none; /* Menghilangkan garis bawah untuk membuatnya seperti tombol */
+}
+.login-button:hover {
+    transform: translateY(-5px); /* Memberikan efek hover dengan menggeser tombol sedikit ke atas */
+    background-color: #3498DB; /* Mengubah warna latar belakang saat di hover */
+    color: white; /* Menambahkan warna putih di tulisan akun saat dihover */
+}
+
+
+/*Ini adalah css untuk aktivitas*/
